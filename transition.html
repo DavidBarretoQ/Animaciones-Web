@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animaciones para la Web</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Curso de Animaciones para la Web</h1>
+  <h2>Contenido:</h2>
+  <a href="transition.html">Transition</a>
+  <a href="transform.html">Transform</a>
+
+  <h2>Sintaxis de transiciones</h2>
+    <pre>
+        /*Qué propiedades va a cambiar en la transición*/
+        transition-property: width, height;
+        
+        /*Cuánto tiempo va a durar la transición*/
+        transition-duration: 1s;
+        
+        /*Cuánto tiempo va a tardar la transición en ocurrir*/
+        transition-delay: 250ms;
+        
+        /*Función que determina de qué forma se calculan los valores intermedios de la transición*/
+        transition-timing-function: ease;
+    </pre>
+
+      <p>Ejemplo de transición: mueve el cursor dentro y fuera de la pelota.</p>
+    <div class="pelota"></div>
+
+    <h2>Transiciones de interacción</h2>
+    <p>Ejemplo: mueve el cursor dentro y fuera de la caja roja.</p>
+    <div class="canasta">
+        <div class="pelota a">Hola</div>
+        <div class="pelota b">Mundo</div>
+    </div>
+  
+</body>
+</html>
