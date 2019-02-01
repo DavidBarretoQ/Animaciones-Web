@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animaciones para la Web</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Curso de Animaciones para la Web</h1>
+
+  <h2>Contenido:</h2>
+  <a href="transition.html">Transition</a>
+  <a href="transform.html">Transform</a>
+  <a href="animation.html">Animation</a>
+  <a href="animationJs.html">Animation con JS</a>
+
+
+  <h2>Animacion con JS</h2>
+  <div class="containerC">    
+    <div class="circulo" id="circulo">Hola Mundo</div>
+  </div>
+
+  
+
+  <script>
+    const $circulo = document.getElementById('circulo');
+    
+
+    // Evento para detectar cuando inicia una animacion
+    // $circulo.addEventListener('animationstart', (event)=>{
+
+    // Evento para detectar cuando cambia una animacion
+    // $circulo.addEventListener('animationiteration', (event)=>{
+
+    // Evento para detectar cuando termina una animacion
+    $circulo.addEventListener('animationend', (event)=>{
+      console.log(event);
+      if (event.animationName === 'rebote') {
+        $circulo.style.animationName = 'circulo, escalera';
+        $circulo.style.animationDuration = '3s';
+      }
+    });
+  
+    
+
+  
+
+  </script>
+
+</body>
+</html>
